@@ -1,41 +1,7 @@
 [
   {
-    "id": "paper-figures",
-    "order": 1,
-    "title": "Paper figures",
-    "lead": "Figures from the paper.",
-    "variants": [
-      {
-        "id": "fig1_group_cds",
-        "label": "Figure 1: group CDS",
-        "png": "assets/supporting/fig1_group_cds.png",
-        "pdf": "assets/supporting/fig1_group_cds.pdf",
-        "meta": "",
-        "stats": []
-      },
-      {
-        "id": "fig2_caller_duration",
-        "label": "Figure 2: callers and recording length",
-        "png": "assets/supporting/fig2_caller_duration.png",
-        "pdf": "assets/supporting/fig2_caller_duration.pdf",
-        "meta": "",
-        "stats": []
-      },
-      {
-        "id": "fig3_conversation_clouds",
-        "label": "Figure 3: conversation clouds",
-        "png": "assets/supporting/fig3_conversation_clouds.png",
-        "pdf": "assets/supporting/fig3_conversation_clouds.pdf",
-        "meta": "",
-        "stats": []
-      }
-    ],
-    "downloads": [],
-    "tables": []
-  },
-  {
     "id": "group-distributions",
-    "order": 2,
+    "order": 1,
     "title": "Behavioural features across conversation groups",
     "lead": "These plots compare pooled feature distributions for human and AI conversation groups. Each point is one score obtained with an HSC reference split, not one conversation.",
     "variants": [
@@ -113,7 +79,7 @@
   },
   {
     "id": "cds-correlations",
-    "order": 3,
+    "order": 2,
     "title": "CDS correlations with listener preferences",
     "lead": "We ask whether a larger difference between two conversation scores matches a stronger listener preference. All 12 measurements use the same 294 directly rated conversation pairs under both anchors.",
     "variants": [
@@ -135,7 +101,7 @@
   },
   {
     "id": "system-ordering",
-    "order": 4,
+    "order": 3,
     "title": "CDS and listener system rankings",
     "lead": "Each point is one system. The horizontal coordinate is its conversation CDS after adjusting for which caller and scenario produced the conversations. The vertical coordinate is its listener Bradley–Terry log strength.",
     "variants": [
@@ -353,7 +319,7 @@
   },
   {
     "id": "system-comparisons",
-    "order": 5,
+    "order": 4,
     "title": "Agreement on system pairs",
     "lead": "Each cell shows whether a measurement and the listener system ranking choose the same winner. Select a behavioural anchor, TTSDS2 or the separate linguistic family. Four systems give six comparisons.",
     "variants": [
@@ -412,7 +378,7 @@
   },
   {
     "id": "conversation-clouds",
-    "order": 6,
+    "order": 5,
     "title": "Conversation clouds for all features",
     "lead": "Each point is one rated conversation. Its horizontal position uses the partner’s feature distribution; its vertical position shows that conversation’s relative listener preference.",
     "variants": [
@@ -766,7 +732,7 @@
   },
   {
     "id": "anchor-distances",
-    "order": 7,
+    "order": 6,
     "title": "Distances to the two anchors",
     "lead": "A score near the middle means similar distances to the two anchors. It does not show that a group is close to either one.",
     "variants": [
@@ -805,7 +771,7 @@
   },
   {
     "id": "weighting",
-    "order": 8,
+    "order": 7,
     "title": "Hierarchical and equal observation weights",
     "lead": "This ablation changes how much each recorded observation contributes while keeping the conversations and feature definitions fixed.",
     "variants": [
@@ -921,7 +887,7 @@
   },
   {
     "id": "feature-removal",
-    "order": 9,
+    "order": 8,
     "title": "Feature and family removal ablation",
     "lead": "Each row removes one feature or one feature family and recomputes the remaining CDS average. A positive horizontal value means the full CDS has a stronger listener correlation than the reduced version.",
     "variants": [
@@ -951,7 +917,7 @@
   },
   {
     "id": "ttsds2-correlations",
-    "order": 10,
+    "order": 9,
     "title": "TTSDS2 correlations with listener preferences",
     "lead": "This comparison asks whether the TTSDS2 advantage between two AI conversations follows the listeners’ preference for one of them. All eleven official features and the published overall score are shown.",
     "variants": [
@@ -986,7 +952,7 @@
   },
   {
     "id": "ttsds2-pooled-clouds",
-    "order": 11,
+    "order": 10,
     "title": "Pooled TTSDS2 with broader HSC references",
     "lead": "All partner turns from each AI system form one fixed target. We rescore each target against fifty shared draws of 100 distinct HSC turns.",
     "variants": [
@@ -1252,7 +1218,7 @@
   },
   {
     "id": "linguistic-correlations",
-    "order": 12,
+    "order": 11,
     "title": "A separate linguistic feature family",
     "lead": "NLI entailment probability and GPT-2 mean token surprisal measure text properties. Their distributional scores are reported separately from the original eight-feature CDS.",
     "variants": [
@@ -1287,7 +1253,7 @@
   },
   {
     "id": "nli-control",
-    "order": 13,
+    "order": 12,
     "title": "NLI scores for actual and shuffled replies",
     "lead": "We compare the entailment probability of each actual reply with ten shuffled replies from the same conversation, preserving speaker and role.",
     "variants": [
@@ -1309,7 +1275,7 @@
   },
   {
     "id": "caller-duration",
-    "order": 14,
+    "order": 13,
     "title": "Callers and recording length",
     "lead": "These plots separate recovery of the full-data CDS system ordering from association with listener preferences.",
     "variants": [
@@ -1773,51 +1739,5 @@
       }
     ],
     "tables": []
-  },
-  {
-    "id": "pair-diagnostics",
-    "order": 15,
-    "title": "Exploratory system-pair diagnostics",
-    "lead": "These checks ask how much the observed correlation changes when comparing conversations from a fixed system pairing, or after removing average rank differences between system pairings.",
-    "variants": [
-      {
-        "id": "ttsds2_within_system_pair_correlations",
-        "label": "TTSDS2 within each fixed system pair",
-        "png": "assets/baselines/ttsds2_within_system_pair_correlations.png",
-        "pdf": "assets/baselines/ttsds2_within_system_pair_correlations.pdf",
-        "meta": "Single canonical orientation per unique conversation pair. Cell values are Spearman correlations.",
-        "stats": []
-      },
-      {
-        "id": "ttsds2_rank_centering_diagnostic",
-        "label": "TTSDS2 before and after mean-rank removal",
-        "png": "assets/baselines/ttsds2_rank_centering_diagnostic.png",
-        "pdf": "assets/baselines/ttsds2_rank_centering_diagnostic.pdf",
-        "meta": "All eleven features and overall TTSDS2. No uncertainty intervals.",
-        "stats": []
-      },
-      {
-        "id": "cds_rank_centering_diagnostic",
-        "label": "Three CDS comparisons before and after mean-rank removal",
-        "png": "assets/baselines/cds_rank_centering_diagnostic.png",
-        "pdf": "assets/baselines/cds_rank_centering_diagnostic.pdf",
-        "meta": "Phone rate, Sylber duration and overall CDS on HSC–MSC. Same 294 pairs as TTSDS2; no uncertainty intervals.",
-        "stats": []
-      }
-    ],
-    "downloads": [
-      {
-        "label": "Within-pair correlations and counts",
-        "href": "data/baselines/ttsds2_within_system_pair_correlations.csv"
-      },
-      {
-        "label": "TTSDS2 rank-centering diagnostics",
-        "href": "data/baselines/ttsds2_system_pair_diagnostics.csv"
-      },
-      {
-        "label": "Three CDS rank-centering diagnostics",
-        "href": "data/baselines/cds_system_pair_diagnostics.csv"
-      }
-    ]
   }
 ]
