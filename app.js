@@ -13,7 +13,7 @@ function selectSection(id, variantId, updateHash=false){
  $('variant').replaceChildren(...section.variants.map(v=>element('option',{value:v.id},v.label)));
  $('variant').value=variant.id;
  $('results-title').textContent=section.title;
- $('collection-kicker').textContent=`${String(section.order).padStart(2,'0')} / Results collection`;
+ $('collection-kicker').textContent='Results';
  $('collection-count').textContent=`${section.variants.length} ${section.variants.length===1?'view':'views'}`;
  $('plot-lead').textContent=section.lead||'';
  $('plot-image').alt=`${variant.label}. ${variant.alt||variant.meta||section.lead||section.title}`;
@@ -42,7 +42,7 @@ function selectSection(id, variantId, updateHash=false){
 }
 async function init(){
  try{
-  const response=await fetch('catalog.json');if(!response.ok)throw new Error('Results catalogue could not be loaded.');
+  const response=await fetch('catalog.json?v=20260913-2');if(!response.ok)throw new Error('Results catalogue could not be loaded.');
   const data=await response.json();sections=(Array.isArray(data)?data:data.sections).sort((a,b)=>a.order-b.order);
   $('collection').replaceChildren(...sections.map(s=>element('option',{value:s.id},`${String(s.order).padStart(2,'0')} · ${s.title}`)));
   $('section-nav').replaceChildren(...sections.map(s=>{const a=element('a',{class:'nav-link',href:`#${s.id}`,'data-id':s.id});a.append(element('span',{class:'num'},String(s.order).padStart(2,'0')),element('span',{},shortNames[s.id]||s.title));a.addEventListener('click',()=>{$('explorer').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});});return a;}));

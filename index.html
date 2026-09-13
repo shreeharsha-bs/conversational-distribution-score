@@ -3,40 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Supplementary results for Conversational Distribution Score: behavioural features, listener preferences, reference sensitivity and weighting ablations.">
-  <title>Conversational Distribution Score — supplementary results</title>
+  <meta name="description" content="Conversational Distribution Score: supplementary figures and results for Distributional Metrics for Evaluating Spoken Conversational Systems.">
+  <title>Conversational Distribution Score</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20260913-1">
-  <script src="app.js?v=20260913-1" defer></script>
+  <link rel="stylesheet" href="style.css?v=20260913-2">
+  <script src="app.js?v=20260913-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#explorer">Skip to results</a>
-  <header class="topbar">
-    <a class="brand" href="#paper-figures" aria-label="CDS companion home"><svg viewBox="0 0 42 30" aria-hidden="true"><path d="M2 26C8 26 8 5 16 5S23 26 31 26"/><path d="M11 26C19 26 18 11 26 11S32 26 40 26"/></svg><span>CDS<span class="brand-divider"> / </span><span class="brand-small">Research companion</span></span></a>
-    <a href="#method-notes" class="top-link">How the scores work <span aria-hidden="true">↗</span></a>
+  <header class="paper-header" id="top" aria-labelledby="page-title">
+    <h1 id="page-title">Conversational Distribution Score</h1>
+    <p class="paper-title">Distributional Metrics for Evaluating Spoken Conversational Systems</p>
+    <div class="authors" aria-label="Authors">
+      <span>Shree Harsha Bokkahalli Satish<sup>1</sup></span>
+      <span>Erica Cooper<sup>2</sup></span>
+      <span>Patrícia Schmidtová<sup>3</sup></span>
+      <span>Maike Züfle<sup>4</sup></span>
+      <span>Éva Székely<sup>1</sup></span>
+      <span>Nicholas Sanders<sup>5</sup></span>
+      <span>Ondřej Klejch<sup>5</sup></span>
+    </div>
+    <div class="affiliations" aria-label="Affiliations">
+      <p><sup>1</sup> Department of Speech, Music and Hearing, KTH Royal Institute of Technology, Sweden</p>
+      <p><sup>2</sup> National Institute of Information and Communications Technology, Japan</p>
+      <p><sup>3</sup> Faculty of Mathematics and Physics, Charles University, Czech Republic</p>
+      <p><sup>4</sup> Karlsruhe Institute of Technology, Germany</p>
+      <p><sup>5</sup> Centre for Speech Technology Research, University of Edinburgh, UK</p>
+    </div>
+    <a class="results-link" href="#explorer">Results</a>
   </header>
   <div class="layout">
     <aside class="sidebar" aria-label="Results navigation">
-      <p class="eyebrow">Explore the evidence</p>
+      <a class="definition-link" href="#definition">CDS definition</a>
+      <p class="sidebar-label">Results</p>
       <nav id="section-nav" aria-label="Plot collections"></nav>
-      <div class="sidebar-bottom"><span class="status-dot" aria-hidden="true"></span> Code and datasets forthcoming<br><a href="#availability">Release information</a></div>
     </aside>
     <main>
-      <section class="intro" aria-labelledby="page-title">
-        <p class="eyebrow">Spoken conversation evaluation · September 2026</p>
-        <h1 id="page-title">Conversational<br class="desktop-break"> Distribution Score</h1>
-        <p class="dek">What do distributions of conversational behaviour tell us about a speech system?</p>
-        <p class="intro-body">CDS compares measured behaviour with two reference collections. Explore how the results change with the feature, the reference and the unit of comparison.</p>
-        <details class="paper-details"><summary>Paper and authors</summary>
-          <p><strong>Distributional Metrics for Evaluating Spoken Conversational Systems</strong></p>
-          <p class="authors">Shree Harsha Bokkahalli Satish<sup>1</sup>, Erica Cooper<sup>2</sup>, Patrícia Schmidtová<sup>3</sup>, Maike Züfle<sup>4</sup>, Éva Székely<sup>1</sup>, Nicholas Sanders<sup>5</sup>, Ondřej Klejch<sup>5</sup></p>
-          <ol class="affiliations"><li>Department of Speech, Music and Hearing, KTH Royal Institute of Technology, Sweden</li><li>National Institute of Information and Communications Technology, Japan</li><li>Faculty of Mathematics and Physics, Charles University, Czech Republic</li><li>Karlsruhe Institute of Technology, Germany</li><li>Centre for Speech Technology Research, University of Edinburgh, UK</li></ol>
-          <p>Contact: <a href="mailto:shbs@kth.se">shbs@kth.se</a></p>
-        </details>
+      <section id="definition" class="definition" aria-labelledby="definition-title">
+        <h2 id="definition-title">Conversational Distribution Score</h2>
+        <p>CDS compares a distribution of conversational behaviour with high-success human conversations (HSC) and a second anchor. We use either medium-success human conversations (MSC) or synthetic dialogues from Behaviour-SD as the second anchor.</p>
+        <div class="formula" role="math" aria-label="CDS equals one hundred times distance to the second anchor divided by the sum of distances to HSC and the second anchor"><span>CDS = 100 ×</span><span class="fraction"><span>distance to second anchor</span><span>distance to HSC + distance to second anchor</span></span></div>
+        <p>Distances are weighted empirical Wasserstein-2 distances. A higher CDS means more HSC-like behaviour relative to the second anchor. A score of 50 means equal distances, which can both be large; if both distances are zero, we assign 50 and flag the case.</p>
       </section>
       <section id="explorer" class="explorer" aria-labelledby="results-title">
-        <div class="section-heading"><p class="eyebrow" id="collection-kicker">Supplementary results</p><span id="collection-count" class="count"></span></div>
-        <h2 id="results-title">Explore the plots</h2>
+        <div class="section-heading"><p class="section-label" id="collection-kicker">Results</p><span id="collection-count" class="count"></span></div>
+        <h2 id="results-title">Results</h2>
         <div class="controls">
           <div class="control"><label for="collection">Plot collection</label><select id="collection"></select></div>
           <div class="control"><label for="variant">Feature or view</label><select id="variant"></select></div>
@@ -46,30 +57,13 @@
           <div id="plot-stats" class="plot-stats"></div>
           <figure class="plot-frame"><a id="large-plot" target="_blank" rel="noopener" title="Open full-size plot"><img id="plot-image" alt="" decoding="async"></a><figcaption id="plot-meta"></figcaption></figure>
           <div class="downloads" id="plot-downloads"></div>
-          <details id="interpretation" class="interpretation" open><summary>How to read this result</summary><ul id="plot-notes"></ul></details>
+          <details id="interpretation" class="interpretation"><summary>Notes</summary><ul id="plot-notes"></ul></details>
           <div id="tables"></div>
           <div id="data-downloads" class="data-downloads"></div>
         </div>
         <noscript><p>This results explorer uses JavaScript to select figures. The complete figure and aggregate-data collection is available in the <a href="https://github.com/shreeharsha-bs/conversational-distribution-score">website repository</a>.</p></noscript>
       </section>
-      <section id="method-notes" class="method-notes" aria-labelledby="methods-title">
-        <p class="eyebrow">Definitions before interpretation</p><h2 id="methods-title">How the scores work</h2>
-        <p>A higher CDS means a distribution is closer to the high-success human reference <em>relative to the second anchor</em>. It is not a probability of being human or a universal quality rating.</p>
-        <div class="formula" role="math" aria-label="CDS equals one hundred times distance to the second anchor divided by the sum of distances to the human reference and second anchor"><span>CDS = 100 ×</span><span class="fraction"><span>distance to second anchor</span><span>distance to HSC + distance to second anchor</span></span></div>
-        <div class="method-grid">
-          <details open><summary>What is one observation?</summary><p>Phone rate, Sylber rate, nPVI and final lengthening are measured per eligible turn. Sylber duration contributes individual segment durations. Interaction features describe turn spans, cross-speaker response gaps and each speaker’s floor-time share. These different observation types form separate distributions.</p><p>Pace and rhythm use 3–30 second speech spans. Rhythm measurements need at least three valid Sylber segments. Interaction measurements use the complete speech timeline.</p></details>
-          <details open><summary>How do conversations receive equal weight?</summary><p>Each conversation contributes equal total mass to a group distribution. Within a conversation, retained speakers share that mass equally. Turn measurements divide a speaker’s mass among valid turns; Sylber segments divide each turn’s mass among its segments. Response gaps share mass across transitions.</p><p>For example, conversations with 90 and 10 turns each contribute half of the group distribution, rather than 90% and 10%.</p></details>
-          <details><summary>What are the reference collections?</summary><p>HSC and MSC are high- and medium-success human conversations from CANDOR. Behaviour-SD is the separate synthetic-dialogue anchor. The behavioural analyses use 50 frozen HSC selections, with 34 reference conversations per selection. The MSC and Behaviour-SD anchors contain 35 and 120 conversations respectively.</p><p>The group plots also show 34 low-success CANDOR conversations (LSC), a separate target collection from the 35 medium-success conversations used as the MSC anchor.</p><p>Held-out HSC plots also change their 34 target conversations across selections. A cloud of 50 reference-split scores describes sensitivity to these selections, not 50 individual conversations.</p></details>
-          <details><summary>What gets averaged?</summary><p>The main CDS averages features within pace, rhythm and interaction, then gives those three families equal weight. It contains eight behavioural features. Linguistic CDS is a separate average of NLI and GPT-2 feature scores.</p><p>Distances are exact scalar empirical Wasserstein-2 distances, including the square root. When both component distances are zero, the score is 50 and the case is flagged. A score of 50 otherwise means equal distances; both distances may still be large.</p></details>
-          <details><summary>Why are there several listener comparisons?</summary><p>Conversation-pair correlation asks whether a larger score difference accompanies a stronger listener preference. The main comparison uses the same 294 usable pairs from 51 callers. Repeated votes become one proportion per pair, and ties count as half a vote.</p><p>Both orientations of each pair are included to remove arbitrary A/B ordering. They are not extra independent observations. Caller ranges use 2,000 resamples of complete callers within collection protocol, holding listeners and references fixed.</p><p>System-ordering plots instead compare caller/scenario-adjusted conversation scores with a system Bradley–Terry ranking. Four systems give six possible system comparisons. Their population can differ from the matched-pair population; each view states its counts.</p></details>
-          <details><summary>What do conversation BT clouds mean?</summary><p>Each point is one rated conversation. Its vertical position is a relative Bradley–Terry log strength, centered within its connected caller/scenario comparison group. Zero is a centering convention, not a humanness threshold.</p><p>The green human controls are Voice Arena partners, not the CANDOR references. These descriptive clouds do not show the matched-pair correlation used in the listener tables. Side-by-side comparisons retain the same available conversations.</p></details>
-          <details><summary>What does the weighting ablation change?</summary><p>The ablation changes hierarchical versus equal-observation weights in the system targets, HSC references and second anchors together. It does not remove distance-ratio calibration or change feature-family weights.</p><p>Table values are means and sample standard deviations across 50 overlapping HSC selections. The SD describes reference sensitivity, not a confidence interval. Pooled system scores are different from averages or adjusted estimates of conversation scores.</p></details>
-          <details><summary>How should TTSDS2 and linguistic scores be read?</summary><p>The historical TTSDS2 conversation scores use 100 turns from one HSC conversation and the closest official noise reference. The later pooled-system clouds use 50 broader HSC draws. Those pooled results do not establish reference robustness of the historical listener correlations.</p><p>NLI uses the model’s entailment probability for a reply given two preceding chronological turns. GPT-2 measures mean response surprisal in bits, equal to log₂ perplexity. These exploratory features remain separate from the eight-feature composite.</p></details>
-          <details><summary>How are callers and recording lengths sampled?</summary><p>For each caller count below 56, the recording-length analysis draws 2,000 caller subsets without replacement within each draw. The same subsets are reused across durations. At 56 callers there is one complete set.</p><p>Ranking recovery compares each estimator with its own full-recording ranking. Correlations use listener preferences about the complete conversations, even when scores use shorter excerpts. Their bands describe variation among caller subsets; undefined correlations are not replaced with zero.</p></details>
-        </div>
-      </section>
-      <section id="availability" class="availability"><p class="eyebrow">Availability</p><h2>Results now. Code and datasets to follow.</h2><p>This website provides the supplementary figures and selected aggregate tables. The evaluator code and datasets will be released separately. Raw recordings, transcripts and participant identifiers are not included here.</p><p><a href="https://github.com/shreeharsha-bs/conversational-distribution-score">Website source and public results <span aria-hidden="true">↗</span></a></p></section>
-      <footer><span>Conversational Distribution Score</span><span>Contact <a href="mailto:shbs@kth.se">shbs@kth.se</a></span></footer>
+      <footer><a href="mailto:shbs@kth.se">shbs@kth.se</a><a href="https://github.com/shreeharsha-bs/conversational-distribution-score">Website source</a></footer>
     </main>
   </div>
 </body>

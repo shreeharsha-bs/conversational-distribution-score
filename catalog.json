@@ -2,18 +2,16 @@
   {
     "id": "paper-figures",
     "order": 1,
-    "title": "Current paper figures",
-    "lead": "The three figures used in the September 13 manuscript export.",
-    "notes": [
-      "The PDFs are unchanged figure assets. The manuscript and its captions are not included."
-    ],
+    "title": "Paper figures",
+    "lead": "Figures from the paper.",
+    "notes": [],
     "variants": [
       {
         "id": "fig1_group_cds",
         "label": "Figure 1: group CDS",
         "png": "assets/supporting/fig1_group_cds.png",
         "pdf": "assets/supporting/fig1_group_cds.pdf",
-        "meta": "Exact figure PDF from the September 13 Overleaf export; PNG preview rendered from that PDF.",
+        "meta": "",
         "stats": []
       },
       {
@@ -21,7 +19,7 @@
         "label": "Figure 2: callers and recording length",
         "png": "assets/supporting/fig2_caller_duration.png",
         "pdf": "assets/supporting/fig2_caller_duration.pdf",
-        "meta": "Exact figure PDF from the September 13 Overleaf export; PNG preview rendered from that PDF.",
+        "meta": "",
         "stats": []
       },
       {
@@ -29,7 +27,7 @@
         "label": "Figure 3: conversation clouds",
         "png": "assets/supporting/fig3_conversation_clouds.png",
         "pdf": "assets/supporting/fig3_conversation_clouds.pdf",
-        "meta": "Exact figure PDF from the September 13 Overleaf export; PNG preview rendered from that PDF.",
+        "meta": "",
         "stats": []
       }
     ],
@@ -39,9 +37,10 @@
   {
     "id": "group-distributions",
     "order": 2,
-    "title": "Every behavioural feature across conversation groups",
+    "title": "Behavioural features across conversation groups",
     "lead": "These plots compare pooled feature distributions for human and AI conversation groups. Each point is one score obtained with an HSC reference split, not one conversation.",
     "notes": [
+      "LSC denotes the 34 low-success CANDOR conversations shown as a target group. These are separate from the 35 medium-success conversations used as the MSC anchor.",
       "A score of 100 means zero distance to the HSC reference; 0 means zero distance to the second anchor. A score of 50 means equal distances, not a probability of humanness or proof that the behaviour lies between the anchors.",
       "Each group has 50 reference-split scores. The HSC reference contains 34 conversations per split; the held-out HSC target also changes across splits. Other target groups stay fixed. Violin width shows split sensitivity, not confidence intervals.",
       "Counts in the labels are eligible conversations. The first five features use 76 H–H and 296 H–AI conversations; interaction features use 77 H–H and 297 H–AI conversations. H–H includes both human sides. H–AI separates the human caller and AI partner."
@@ -122,7 +121,7 @@
   {
     "id": "cds-correlations",
     "order": 3,
-    "title": "Which CDS measurements track listener preferences?",
+    "title": "CDS correlations with listener preferences",
     "lead": "We ask whether a larger difference between two conversation scores matches a stronger listener preference. All 12 measurements use the same 294 directly rated conversation pairs under both anchors.",
     "notes": [
       "Each pair contributes both label directions before Spearman correlation is calculated. This removes the arbitrary choice of which conversation is called A. Mirrored points are not independent observations.",
@@ -468,7 +467,7 @@
   {
     "id": "system-ordering",
     "order": 5,
-    "title": "Do CDS and listeners order the four systems similarly?",
+    "title": "CDS and listener system rankings",
     "lead": "Each point is one system. The horizontal coordinate is its conversation CDS after adjusting for which caller and scenario produced the conversations. The vertical coordinate is its listener Bradley–Terry log strength.",
     "notes": [
       "The adjustment fits system effects alongside caller–scenario effects. This reduces differences caused by the mix of callers and scenarios. It is not a score from merging all conversations into one distribution.",
@@ -691,7 +690,7 @@
   {
     "id": "system-comparisons",
     "order": 6,
-    "title": "Which of the six system comparisons agree?",
+    "title": "Agreement on system pairs",
     "lead": "Each cell shows whether a measurement and the listener system ranking choose the same winner. Select a behavioural anchor, TTSDS2 or the separate linguistic family. Four systems give six comparisons.",
     "notes": [
       "These are the six pairs among Gemini, OpenAI, Inworld and Grok. Agreement does not measure how strongly listeners preferred either system, and the six comparisons share systems.",
@@ -1282,7 +1281,7 @@
   {
     "id": "feature-removal",
     "order": 10,
-    "title": "What changes when a feature or family is removed?",
+    "title": "Feature and family removal ablation",
     "lead": "Each row removes one feature or one feature family and recomputes the remaining CDS average. A positive horizontal value means the full CDS has a stronger listener correlation than the reduced version.",
     "notes": [
       "The remaining fixed feature hierarchy is re-averaged after each removal. No weights are learned and no subset search is performed. This is a feature-removal analysis, separate from the observation-weighting experiment.",
@@ -1316,7 +1315,7 @@
   {
     "id": "ttsds2-correlations",
     "order": 11,
-    "title": "Every TTSDS2 feature against listener preferences",
+    "title": "TTSDS2 correlations with listener preferences",
     "lead": "This comparison asks whether the TTSDS2 advantage between two AI conversations follows the listeners’ preference for one of them. All eleven official features and the published overall score are shown.",
     "notes": [
       "All rows use the same 294 conversation pairs, 296 scored AI conversations and 51 callers. The one pair missing a score is excluded. Exact listener ties remain in the correlation.",
@@ -1668,7 +1667,7 @@
   {
     "id": "nli-control",
     "order": 14,
-    "title": "Does NLI respond to the actual reply pairing?",
+    "title": "NLI scores for actual and shuffled replies",
     "lead": "We compare the entailment probability of each actual reply with ten shuffled replies from the same conversation, preserving speaker and role.",
     "notes": [
       "The two means use the same eligible replies: every retained reply has all ten shuffled controls. We average equally within speakers, within conversations and across conversations. Bars show group means, without uncertainty intervals.",
