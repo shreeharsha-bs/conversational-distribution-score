@@ -1,0 +1,109 @@
+measurement_family,anchor,feature,system_a,system_b,adjusted_score_a,adjusted_score_b,listener_bt_a,listener_bt_b,metric_winner,listener_winner,same_winner
+TTSDS2,HSC–noise (historical reference),Hubert,Gemini,OpenAI,83.8301970367,86.6151204567,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),Hubert,Gemini,Inworld,83.8301970367,82.8473072831,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Hubert,Gemini,Grok,83.8301970367,83.8939225133,1.0853177459,-0.469609122939,Grok,Gemini,0
+TTSDS2,HSC–noise (historical reference),Hubert,OpenAI,Inworld,86.6151204567,82.8473072831,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Hubert,OpenAI,Grok,86.6151204567,83.8939225133,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Hubert,Inworld,Grok,82.8473072831,83.8939225133,-0.46092255346,-0.469609122939,Grok,Inworld,0
+TTSDS2,HSC–noise (historical reference),Wav2Vec2,Gemini,OpenAI,83.7513394541,85.0494659104,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),Wav2Vec2,Gemini,Inworld,83.7513394541,81.4946268016,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2,Gemini,Grok,83.7513394541,82.2926630625,1.0853177459,-0.469609122939,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2,OpenAI,Inworld,85.0494659104,81.4946268016,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2,OpenAI,Grok,85.0494659104,82.2926630625,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2,Inworld,Grok,81.4946268016,82.2926630625,-0.46092255346,-0.469609122939,Grok,Inworld,0
+TTSDS2,HSC–noise (historical reference),WavLM,Gemini,OpenAI,87.0546470556,89.375348971,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),WavLM,Gemini,Inworld,87.0546470556,86.809799415,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),WavLM,Gemini,Grok,87.0546470556,87.6267077188,1.0853177459,-0.469609122939,Grok,Gemini,0
+TTSDS2,HSC–noise (historical reference),WavLM,OpenAI,Inworld,89.375348971,86.809799415,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),WavLM,OpenAI,Grok,89.375348971,87.6267077188,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),WavLM,Inworld,Grok,86.809799415,87.6267077188,-0.46092255346,-0.469609122939,Grok,Inworld,0
+TTSDS2,HSC–noise (historical reference),Wav2Vec2 Activations,Gemini,OpenAI,85.6174393381,84.2734234344,1.0853177459,-0.154786069503,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2 Activations,Gemini,Inworld,85.6174393381,80.6384333743,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2 Activations,Gemini,Grok,85.6174393381,81.884034609,1.0853177459,-0.469609122939,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2 Activations,OpenAI,Inworld,84.2734234344,80.6384333743,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2 Activations,OpenAI,Grok,84.2734234344,81.884034609,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Wav2Vec2 Activations,Inworld,Grok,80.6384333743,81.884034609,-0.46092255346,-0.469609122939,Grok,Inworld,0
+TTSDS2,HSC–noise (historical reference),Whisper Activations,Gemini,OpenAI,61.4946509332,60.8901545613,1.0853177459,-0.154786069503,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Whisper Activations,Gemini,Inworld,61.4946509332,61.5644155983,1.0853177459,-0.46092255346,Inworld,Gemini,0
+TTSDS2,HSC–noise (historical reference),Whisper Activations,Gemini,Grok,61.4946509332,59.3646868152,1.0853177459,-0.469609122939,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Whisper Activations,OpenAI,Inworld,60.8901545613,61.5644155983,-0.154786069503,-0.46092255346,Inworld,OpenAI,0
+TTSDS2,HSC–noise (historical reference),Whisper Activations,OpenAI,Grok,60.8901545613,59.3646868152,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Whisper Activations,Inworld,Grok,61.5644155983,59.3646868152,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+TTSDS2,HSC–noise (historical reference),Allosaurus SR,Gemini,OpenAI,82.2315728925,87.5516517373,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),Allosaurus SR,Gemini,Inworld,82.2315728925,88.8869218914,1.0853177459,-0.46092255346,Inworld,Gemini,0
+TTSDS2,HSC–noise (historical reference),Allosaurus SR,Gemini,Grok,82.2315728925,84.4245752752,1.0853177459,-0.469609122939,Grok,Gemini,0
+TTSDS2,HSC–noise (historical reference),Allosaurus SR,OpenAI,Inworld,87.5516517373,88.8869218914,-0.154786069503,-0.46092255346,Inworld,OpenAI,0
+TTSDS2,HSC–noise (historical reference),Allosaurus SR,OpenAI,Grok,87.5516517373,84.4245752752,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Allosaurus SR,Inworld,Grok,88.8869218914,84.4245752752,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+TTSDS2,HSC–noise (historical reference),Hubert Token SR,Gemini,OpenAI,65.2380359088,77.0243267203,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),Hubert Token SR,Gemini,Inworld,65.2380359088,80.4894785789,1.0853177459,-0.46092255346,Inworld,Gemini,0
+TTSDS2,HSC–noise (historical reference),Hubert Token SR,Gemini,Grok,65.2380359088,77.2244305249,1.0853177459,-0.469609122939,Grok,Gemini,0
+TTSDS2,HSC–noise (historical reference),Hubert Token SR,OpenAI,Inworld,77.0243267203,80.4894785789,-0.154786069503,-0.46092255346,Inworld,OpenAI,0
+TTSDS2,HSC–noise (historical reference),Hubert Token SR,OpenAI,Grok,77.0243267203,77.2244305249,-0.154786069503,-0.469609122939,Grok,OpenAI,0
+TTSDS2,HSC–noise (historical reference),Hubert Token SR,Inworld,Grok,80.4894785789,77.2244305249,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+TTSDS2,HSC–noise (historical reference),MPM,Gemini,OpenAI,91.5741028782,93.7998356694,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),MPM,Gemini,Inworld,91.5741028782,86.8835198749,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),MPM,Gemini,Grok,91.5741028782,93.4877498783,1.0853177459,-0.469609122939,Grok,Gemini,0
+TTSDS2,HSC–noise (historical reference),MPM,OpenAI,Inworld,93.7998356694,86.8835198749,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),MPM,OpenAI,Grok,93.7998356694,93.4877498783,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),MPM,Inworld,Grok,86.8835198749,93.4877498783,-0.46092255346,-0.469609122939,Grok,Inworld,0
+TTSDS2,HSC–noise (historical reference),Pitch,Gemini,OpenAI,52.150582729,63.0461018377,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),Pitch,Gemini,Inworld,52.150582729,36.9001447102,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Pitch,Gemini,Grok,52.150582729,62.4066007143,1.0853177459,-0.469609122939,Grok,Gemini,0
+TTSDS2,HSC–noise (historical reference),Pitch,OpenAI,Inworld,63.0461018377,36.9001447102,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Pitch,OpenAI,Grok,63.0461018377,62.4066007143,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Pitch,Inworld,Grok,36.9001447102,62.4066007143,-0.46092255346,-0.469609122939,Grok,Inworld,0
+TTSDS2,HSC–noise (historical reference),DVector,Gemini,OpenAI,67.4351933707,65.1376373016,1.0853177459,-0.154786069503,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),DVector,Gemini,Inworld,67.4351933707,62.6272788526,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),DVector,Gemini,Grok,67.4351933707,60.2671144119,1.0853177459,-0.469609122939,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),DVector,OpenAI,Inworld,65.1376373016,62.6272788526,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),DVector,OpenAI,Grok,65.1376373016,60.2671144119,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),DVector,Inworld,Grok,62.6272788526,60.2671144119,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+TTSDS2,HSC–noise (historical reference),WeSpeaker,Gemini,OpenAI,56.7235273755,56.1215855902,1.0853177459,-0.154786069503,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),WeSpeaker,Gemini,Inworld,56.7235273755,54.1598126123,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),WeSpeaker,Gemini,Grok,56.7235273755,53.8321832704,1.0853177459,-0.469609122939,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),WeSpeaker,OpenAI,Inworld,56.1215855902,54.1598126123,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),WeSpeaker,OpenAI,Grok,56.1215855902,53.8321832704,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),WeSpeaker,Inworld,Grok,54.1598126123,53.8321832704,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+TTSDS2,HSC–noise (historical reference),Overall TTSDS2,Gemini,OpenAI,73.3281767399,75.1450478036,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+TTSDS2,HSC–noise (historical reference),Overall TTSDS2,Gemini,Inworld,73.3281767399,71.6255577456,1.0853177459,-0.46092255346,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Overall TTSDS2,Gemini,Grok,73.3281767399,72.9160699374,1.0853177459,-0.469609122939,Gemini,Gemini,1
+TTSDS2,HSC–noise (historical reference),Overall TTSDS2,OpenAI,Inworld,75.1450478036,71.6255577456,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Overall TTSDS2,OpenAI,Grok,75.1450478036,72.9160699374,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+TTSDS2,HSC–noise (historical reference),Overall TTSDS2,Inworld,Grok,71.6255577456,72.9160699374,-0.46092255346,-0.469609122939,Grok,Inworld,0
+Linguistic CDS,hsc_msc,NLI entailment,Gemini,OpenAI,49.4945591034,49.0981266895,1.0853177459,-0.154786069503,Gemini,Gemini,1
+Linguistic CDS,hsc_msc,NLI entailment,Gemini,Inworld,49.4945591034,49.3633384602,1.0853177459,-0.46092255346,Gemini,Gemini,1
+Linguistic CDS,hsc_msc,NLI entailment,Gemini,Grok,49.4945591034,49.3109802246,1.0853177459,-0.469609122939,Gemini,Gemini,1
+Linguistic CDS,hsc_msc,NLI entailment,OpenAI,Inworld,49.0981266895,49.3633384602,-0.154786069503,-0.46092255346,Inworld,OpenAI,0
+Linguistic CDS,hsc_msc,NLI entailment,OpenAI,Grok,49.0981266895,49.3109802246,-0.154786069503,-0.469609122939,Grok,OpenAI,0
+Linguistic CDS,hsc_msc,NLI entailment,Inworld,Grok,49.3633384602,49.3109802246,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+Linguistic CDS,hsc_msc,GPT-2 surprisal,Gemini,OpenAI,50.3594103367,50.4750589455,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+Linguistic CDS,hsc_msc,GPT-2 surprisal,Gemini,Inworld,50.3594103367,50.487030227,1.0853177459,-0.46092255346,Inworld,Gemini,0
+Linguistic CDS,hsc_msc,GPT-2 surprisal,Gemini,Grok,50.3594103367,50.3423917803,1.0853177459,-0.469609122939,Gemini,Gemini,1
+Linguistic CDS,hsc_msc,GPT-2 surprisal,OpenAI,Inworld,50.4750589455,50.487030227,-0.154786069503,-0.46092255346,Inworld,OpenAI,0
+Linguistic CDS,hsc_msc,GPT-2 surprisal,OpenAI,Grok,50.4750589455,50.3423917803,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+Linguistic CDS,hsc_msc,GPT-2 surprisal,Inworld,Grok,50.487030227,50.3423917803,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+Linguistic CDS,hsc_msc,Linguistic combined,Gemini,OpenAI,49.92698472,49.7865928175,1.0853177459,-0.154786069503,Gemini,Gemini,1
+Linguistic CDS,hsc_msc,Linguistic combined,Gemini,Inworld,49.92698472,49.9251843436,1.0853177459,-0.46092255346,Gemini,Gemini,1
+Linguistic CDS,hsc_msc,Linguistic combined,Gemini,Grok,49.92698472,49.8266860024,1.0853177459,-0.469609122939,Gemini,Gemini,1
+Linguistic CDS,hsc_msc,Linguistic combined,OpenAI,Inworld,49.7865928175,49.9251843436,-0.154786069503,-0.46092255346,Inworld,OpenAI,0
+Linguistic CDS,hsc_msc,Linguistic combined,OpenAI,Grok,49.7865928175,49.8266860024,-0.154786069503,-0.469609122939,Grok,OpenAI,0
+Linguistic CDS,hsc_msc,Linguistic combined,Inworld,Grok,49.9251843436,49.8266860024,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+Linguistic CDS,hsc_behavior_sd,NLI entailment,Gemini,OpenAI,33.0837783782,41.7725231125,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+Linguistic CDS,hsc_behavior_sd,NLI entailment,Gemini,Inworld,33.0837783782,39.3993519659,1.0853177459,-0.46092255346,Inworld,Gemini,0
+Linguistic CDS,hsc_behavior_sd,NLI entailment,Gemini,Grok,33.0837783782,51.9670929433,1.0853177459,-0.469609122939,Grok,Gemini,0
+Linguistic CDS,hsc_behavior_sd,NLI entailment,OpenAI,Inworld,41.7725231125,39.3993519659,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+Linguistic CDS,hsc_behavior_sd,NLI entailment,OpenAI,Grok,41.7725231125,51.9670929433,-0.154786069503,-0.469609122939,Grok,OpenAI,0
+Linguistic CDS,hsc_behavior_sd,NLI entailment,Inworld,Grok,39.3993519659,51.9670929433,-0.46092255346,-0.469609122939,Grok,Inworld,0
+Linguistic CDS,hsc_behavior_sd,GPT-2 surprisal,Gemini,OpenAI,43.0509636187,47.0585295063,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+Linguistic CDS,hsc_behavior_sd,GPT-2 surprisal,Gemini,Inworld,43.0509636187,47.3863280906,1.0853177459,-0.46092255346,Inworld,Gemini,0
+Linguistic CDS,hsc_behavior_sd,GPT-2 surprisal,Gemini,Grok,43.0509636187,43.003735167,1.0853177459,-0.469609122939,Gemini,Gemini,1
+Linguistic CDS,hsc_behavior_sd,GPT-2 surprisal,OpenAI,Inworld,47.0585295063,47.3863280906,-0.154786069503,-0.46092255346,Inworld,OpenAI,0
+Linguistic CDS,hsc_behavior_sd,GPT-2 surprisal,OpenAI,Grok,47.0585295063,43.003735167,-0.154786069503,-0.469609122939,OpenAI,OpenAI,1
+Linguistic CDS,hsc_behavior_sd,GPT-2 surprisal,Inworld,Grok,47.3863280906,43.003735167,-0.46092255346,-0.469609122939,Inworld,Inworld,1
+Linguistic CDS,hsc_behavior_sd,Linguistic combined,Gemini,OpenAI,38.0673709984,44.4155263094,1.0853177459,-0.154786069503,OpenAI,Gemini,0
+Linguistic CDS,hsc_behavior_sd,Linguistic combined,Gemini,Inworld,38.0673709984,43.3928400282,1.0853177459,-0.46092255346,Inworld,Gemini,0
+Linguistic CDS,hsc_behavior_sd,Linguistic combined,Gemini,Grok,38.0673709984,47.4854140552,1.0853177459,-0.469609122939,Grok,Gemini,0
+Linguistic CDS,hsc_behavior_sd,Linguistic combined,OpenAI,Inworld,44.4155263094,43.3928400282,-0.154786069503,-0.46092255346,OpenAI,OpenAI,1
+Linguistic CDS,hsc_behavior_sd,Linguistic combined,OpenAI,Grok,44.4155263094,47.4854140552,-0.154786069503,-0.469609122939,Grok,OpenAI,0
+Linguistic CDS,hsc_behavior_sd,Linguistic combined,Inworld,Grok,43.3928400282,47.4854140552,-0.46092255346,-0.469609122939,Grok,Inworld,0

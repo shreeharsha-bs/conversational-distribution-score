@@ -1,0 +1,4 @@
+feature,metric_key,scale,unique_conversation_pairs,unique_callers,published_matched_pair_spearman,residual_global_rank_correlation,score_rank_variance_fraction_between_groups,preference_rank_variance_fraction_between_groups,oriented_groups,protocol_and_pair_centred_rank_correlation
+Phone rate,allosaurus_rate,HSC-MSC,294,51,0.381788532797,0.0629050031623,0.724150895839,0.416525846697,12,0.0110566238526
+Sylber duration,sylber_duration,HSC-MSC,294,51,0.503408463483,0.209445795916,0.401076957984,0.416525846697,12,0.153145551888
+Overall CDS,overall,HSC-MSC,294,51,0.221849902622,-0.0299206792605,0.208960012763,0.416525846697,12,-0.0791402374779

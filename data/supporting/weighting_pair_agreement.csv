@@ -1,0 +1,5 @@
+anchor,weighting,listener_system_pairs_agreed,listener_system_pairs_total
+hsc_msc,hierarchical,5,6
+hsc_msc,raw_observation,4,6
+hsc_behavior_sd,hierarchical,4,6
+hsc_behavior_sd,raw_observation,4,6

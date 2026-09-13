@@ -1,0 +1,13 @@
+side,feature_key,available_ai_conversations,unique_matched_conversation_pairs,pairs_excluded_missing_score,matched_pair_spearman,matched_pair_spearman_q025,matched_pair_spearman_q975,provider_order_pairs_agreed,provider_order_pairs_compared,human_provider_order,metric_provider_order
+partner,Hubert,296,294,1,-0.162835854207,-0.267803167956,-0.0603091672015,3,6,gemini>openai>inworld>grok,openai>grok>gemini>inworld
+partner,Wav2Vec2,296,294,1,0.116146234081,0.0023346386816,0.224819949574,4,6,gemini>openai>inworld>grok,openai>gemini>grok>inworld
+partner,WavLM,296,294,1,-0.273184757533,-0.371461322372,-0.177017785348,3,6,gemini>openai>inworld>grok,openai>grok>gemini>inworld
+partner,Wav2Vec2 Activations,296,294,1,0.555116522955,0.4823934973,0.625103718236,5,6,gemini>openai>inworld>grok,gemini>openai>grok>inworld
+partner,Whisper Activations,296,294,1,0.105305946241,-0.00190048070327,0.214271217005,4,6,gemini>openai>inworld>grok,inworld>gemini>openai>grok
+partner,Allosaurus SR,296,294,1,-0.40934385585,-0.50653439698,-0.31511965606,2,6,gemini>openai>inworld>grok,inworld>openai>grok>gemini
+partner,Hubert Token SR,296,294,1,-0.593612106784,-0.659833466392,-0.524452954487,1,6,gemini>openai>inworld>grok,inworld>grok>openai>gemini
+partner,MPM,296,294,1,-0.0362235769932,-0.122763533617,0.057168810651,3,6,gemini>openai>inworld>grok,openai>grok>gemini>inworld
+partner,Pitch,296,294,1,-0.0869019508773,-0.173643008705,0.00457903203722,3,6,gemini>openai>inworld>grok,openai>grok>gemini>inworld
+partner,DVector,296,294,1,0.418529122032,0.316678573747,0.521150610685,6,6,gemini>openai>inworld>grok,gemini>openai>inworld>grok
+partner,WeSpeaker,296,294,1,0.198605778739,0.0745562597249,0.327404691591,6,6,gemini>openai>inworld>grok,gemini>openai>inworld>grok
+partner,Overall TTSDS2,296,294,1,-0.0622293789611,-0.152825877863,0.0324907314382,4,6,gemini>openai>inworld>grok,openai>gemini>grok>inworld

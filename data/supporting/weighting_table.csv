@@ -1,0 +1,17 @@
+anchor,metric_key,condition,provider,mean_cds,std_cds,hsc_splits,std_ddof,listener_pairs_agreed,listener_pairs_total
+hsc_msc,overall,hierarchical,gemini,48.52154807473551,1.9729220715019713,50,1,5,6
+hsc_msc,overall,hierarchical,openai,48.67671173174476,1.9815187043563802,50,1,5,6
+hsc_msc,overall,hierarchical,inworld,48.129619977937395,1.9840449758837697,50,1,5,6
+hsc_msc,overall,hierarchical,grok,47.76399273161641,1.9510037222391887,50,1,5,6
+hsc_msc,overall,raw_observation,gemini,48.25647109094352,1.8204160570203793,50,1,4,6
+hsc_msc,overall,raw_observation,openai,48.269528781204535,1.8424315609993582,50,1,4,6
+hsc_msc,overall,raw_observation,inworld,47.24671162347792,1.8932199187312735,50,1,4,6
+hsc_msc,overall,raw_observation,grok,47.71070869935219,1.7926447476634655,50,1,4,6
+hsc_behavior_sd,overall,hierarchical,gemini,44.43095399314745,1.3704007743359894,50,1,4,6
+hsc_behavior_sd,overall,hierarchical,openai,44.37859503020696,1.3358165189785816,50,1,4,6
+hsc_behavior_sd,overall,hierarchical,inworld,45.0142090031508,1.5246367639379863,50,1,4,6
+hsc_behavior_sd,overall,hierarchical,grok,43.92711598878499,1.6372994924021111,50,1,4,6
+hsc_behavior_sd,overall,raw_observation,gemini,43.95718856443706,1.33161775849398,50,1,4,6
+hsc_behavior_sd,overall,raw_observation,openai,43.10603014502111,1.3224468705702213,50,1,4,6
+hsc_behavior_sd,overall,raw_observation,inworld,42.89644216962219,1.5668905862738483,50,1,4,6
+hsc_behavior_sd,overall,raw_observation,grok,43.562543865438144,1.54604858579482,50,1,4,6
