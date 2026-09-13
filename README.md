@@ -10,7 +10,7 @@ separately. It contains no raw recordings, transcripts or participant identifier
 
 ## Explore the results
 
-The website has 16 plot collections, covering behavioural features, listener
+The website has 15 plot collections, covering behavioural features, listener
 preferences, adjusted system ordering, reference sensitivity, weighting and
 feature-removal ablations, linguistic features, TTSDS2 and recording requirements.
 The [figure index](results-index.csv) lists every downloadable view.

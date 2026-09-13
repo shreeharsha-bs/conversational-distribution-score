@@ -4,7 +4,6 @@
     "order": 1,
     "title": "Paper figures",
     "lead": "Figures from the paper.",
-    "notes": [],
     "variants": [
       {
         "id": "fig1_group_cds",
@@ -39,12 +38,6 @@
     "order": 2,
     "title": "Behavioural features across conversation groups",
     "lead": "These plots compare pooled feature distributions for human and AI conversation groups. Each point is one score obtained with an HSC reference split, not one conversation.",
-    "notes": [
-      "LSC denotes the 34 low-success CANDOR conversations shown as a target group. These are separate from the 35 medium-success conversations used as the MSC anchor.",
-      "A score of 100 means zero distance to the HSC reference; 0 means zero distance to the second anchor. A score of 50 means equal distances, not a probability of humanness or proof that the behaviour lies between the anchors.",
-      "Each group has 50 reference-split scores. The HSC reference contains 34 conversations per split; the held-out HSC target also changes across splits. Other target groups stay fixed. Violin width shows split sensitivity, not confidence intervals.",
-      "Counts in the labels are eligible conversations. The first five features use 76 H–H and 296 H–AI conversations; interaction features use 77 H–H and 297 H–AI conversations. H–H includes both human sides. H–AI separates the human caller and AI partner."
-    ],
     "variants": [
       {
         "id": "group-allosaurus_rate",
@@ -123,11 +116,6 @@
     "order": 3,
     "title": "CDS correlations with listener preferences",
     "lead": "We ask whether a larger difference between two conversation scores matches a stronger listener preference. All 12 measurements use the same 294 directly rated conversation pairs under both anchors.",
-    "notes": [
-      "Each pair contributes both label directions before Spearman correlation is calculated. This removes the arbitrary choice of which conversation is called A. Mirrored points are not independent observations.",
-      "Ranges show the middle 95% of 2,000 resamples of complete caller clusters with replacement, separately within the two assignment protocols. They are caller-resampling ranges, not confidence intervals. There are 51 caller clusters: 20 in the original protocol and 31 in the three-scenario protocol.",
-      "To compare features on the same pairs, turn duration, signed response gap and floor-time share are restricted from 295 to 294 pairs here. Their correlations therefore differ slightly from the original full-eligibility tables. All three families already use the common 294 pairs. All ranges are freshly recomputed using the established resampling method."
-    ],
     "variants": [
       {
         "id": "cds-listener-correlations",
@@ -146,334 +134,10 @@
     ]
   },
   {
-    "id": "pair-preferences",
-    "order": 4,
-    "title": "Conversation-pair score differences and votes",
-    "lead": "Each pair of points represents one listener comparison in both label directions. A positive score difference favours conversation A; a preference share above one half means that listeners favour A.",
-    "notes": [
-      "Repeated votes for the same pair are averaged. Every unique conversation pair has equal weight, regardless of how many votes it received. Correlation keeps the 39 exact listener ties.",
-      "Same-winner counts use the 255 pairs with a directional listener preference. A metric tie contributes one half in the agreement fraction; mirrored points do not double this denominator.",
-      "The 588 displayed points represent 294 unique pairs. Points can overlap exactly; a faint duplicate or an apparently sparse region does not indicate a different sample count. Each panel uses its own horizontal limits to show its score differences clearly."
-    ],
-    "variants": [
-      {
-        "id": "pair-allosaurus_rate",
-        "label": "Phone rate",
-        "png": "assets/behavior/pair-allosaurus_rate.png",
-        "pdf": "assets/behavior/pair-allosaurus_rate.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.382"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "184/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "0.448"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "192/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-sylber_rate",
-        "label": "Sylber rate",
-        "png": "assets/behavior/pair-sylber_rate.png",
-        "pdf": "assets/behavior/pair-sylber_rate.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.252"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "170/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "0.321"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "171/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-sylber_duration",
-        "label": "Sylber unit duration",
-        "png": "assets/behavior/pair-sylber_duration.png",
-        "pdf": "assets/behavior/pair-sylber_duration.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.503"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "187/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "0.615"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "192/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-sylber_npvi",
-        "label": "nPVI",
-        "png": "assets/behavior/pair-sylber_npvi.png",
-        "pdf": "assets/behavior/pair-sylber_npvi.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.121"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "143/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "0.119"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "138/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-sylber_final_lengthening",
-        "label": "Turn-final lengthening",
-        "png": "assets/behavior/pair-sylber_final_lengthening.png",
-        "pdf": "assets/behavior/pair-sylber_final_lengthening.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "-0.080"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "121/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "-0.076"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "125/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-turn_duration",
-        "label": "Turn duration",
-        "png": "assets/behavior/pair-turn_duration.png",
-        "pdf": "assets/behavior/pair-turn_duration.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "-0.001"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "122/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "-0.089"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "105/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-signed_response_gap",
-        "label": "Signed response gap",
-        "png": "assets/behavior/pair-signed_response_gap.png",
-        "pdf": "assets/behavior/pair-signed_response_gap.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.200"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "153/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "-0.256"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "96/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-floor_time_share",
-        "label": "Floor-time share",
-        "png": "assets/behavior/pair-floor_time_share.png",
-        "pdf": "assets/behavior/pair-floor_time_share.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "-0.054"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "117/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "0.060"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "138/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-pace",
-        "label": "Pace family",
-        "png": "assets/behavior/pair-pace.png",
-        "pdf": "assets/behavior/pair-pace.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.388"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "182/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "0.556"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "193/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-rhythm",
-        "label": "Rhythm family",
-        "png": "assets/behavior/pair-rhythm.png",
-        "pdf": "assets/behavior/pair-rhythm.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "-0.029"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "128/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "-0.035"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "129/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-interaction",
-        "label": "Interaction family",
-        "png": "assets/behavior/pair-interaction.png",
-        "pdf": "assets/behavior/pair-interaction.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.103"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "134/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "-0.193"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "91/255"
-          }
-        ]
-      },
-      {
-        "id": "pair-overall",
-        "label": "Overall CDS",
-        "png": "assets/behavior/pair-overall.png",
-        "pdf": "assets/behavior/pair-overall.pdf",
-        "meta": "294 unique conversation pairs, shown in both label directions.",
-        "stats": [
-          {
-            "label": "HSC–MSC Spearman ρ",
-            "value": "0.222"
-          },
-          {
-            "label": "HSC–MSC same-winner pairs",
-            "value": "154/255"
-          },
-          {
-            "label": "HSC–Behaviour-SD Spearman ρ",
-            "value": "0.266"
-          },
-          {
-            "label": "HSC–Behaviour-SD same-winner pairs",
-            "value": "158/255"
-          }
-        ]
-      }
-    ],
-    "downloads": [
-      {
-        "label": "Aggregate correlations and agreement counts",
-        "href": "data/behavior/cds_listener_correlations.csv"
-      }
-    ]
-  },
-  {
     "id": "system-ordering",
-    "order": 5,
+    "order": 4,
     "title": "CDS and listener system rankings",
     "lead": "Each point is one system. The horizontal coordinate is its conversation CDS after adjusting for which caller and scenario produced the conversations. The vertical coordinate is its listener Bradley–Terry log strength.",
-    "notes": [
-      "The adjustment fits system effects alongside caller–scenario effects. This reduces differences caused by the mix of callers and scenarios. It is not a score from merging all conversations into one distribution.",
-      "Bradley–Terry strengths are fitted to the system preference votes, with ties treated as half a win. Larger values indicate stronger relative preference; the four strengths sum to zero.",
-      "The adjusted system estimates retain the saved feature-specific populations: 296 conversations for the first five features, all three families and overall CDS; 297 for the three individual interaction features. They are distinct from the common 294 conversation pairs used for the correlation plots."
-    ],
     "variants": [
       {
         "id": "systems-allosaurus_rate",
@@ -689,15 +353,9 @@
   },
   {
     "id": "system-comparisons",
-    "order": 6,
+    "order": 5,
     "title": "Agreement on system pairs",
     "lead": "Each cell shows whether a measurement and the listener system ranking choose the same winner. Select a behavioural anchor, TTSDS2 or the separate linguistic family. Four systems give six comparisons.",
-    "notes": [
-      "These are the six pairs among Gemini, OpenAI, Inworld and Grok. Agreement does not measure how strongly listeners preferred either system, and the six comparisons share systems.",
-      "Behavioural CDS uses adjusted conversation scores. A tied metric does not count as an agreed system comparison. The fixed feature-specific adjustment populations are retained.",
-      "These baseline matrices use adjusted conversation scores. They do not use the pooled TTSDS2 reference-cloud means. Each row contains only six system comparisons.",
-      "TTSDS2 uses the historical one-conversation HSC reference with its closest-noise calibration. Linguistic CDS uses HSC–MSC or HSC–Behaviour-SD and is kept separate from the original eight-feature composite."
-    ],
     "variants": [
       {
         "id": "behavior-agreement-hsc_msc",
@@ -754,15 +412,9 @@
   },
   {
     "id": "conversation-clouds",
-    "order": 7,
+    "order": 6,
     "title": "Conversation clouds for all features",
     "lead": "Each point is one rated conversation. Its horizontal position uses the partner’s feature distribution; its vertical position shows that conversation’s relative listener preference.",
-    "notes": [
-      "BT strengths are fitted within caller/scenario comparison groups, with ties as half-wins and ridge 0.1. Each connected comparison group is centered at zero. These are relative strengths within groups, not a common absolute humanness scale.",
-      "The CDS clouds contain 259 or 260 AI conversations and 70 human controls, depending on feature availability. Every TTSDS2 cloud contains 259 AI conversations and 70 controls. The unmatched extra CDS point is retained only in its original feature view; cross-metric claims require matched populations.",
-      "These point clouds are descriptive. The listener-correlation tables instead compare matched conversation score differences with vote proportions. No caller-side ratings or trend/correlation annotations are included.",
-      "The TTSDS2 conversation scores use the historical one-conversation HSC reference. The broader pooled reference experiment is shown separately and does not repair or validate these conversation-level scores."
-    ],
     "variants": [
       {
         "id": "cloud_cds_allosaurus_rate",
@@ -1114,14 +766,9 @@
   },
   {
     "id": "anchor-distances",
-    "order": 8,
+    "order": 7,
     "title": "Distances to the two anchors",
     "lead": "A score near the middle means similar distances to the two anchors. It does not show that a group is close to either one.",
-    "notes": [
-      "Each small point uses one of the same 50 HSC reference splits; diamonds show mean distances. The diagonal is equal distance, where CDS is 50. Distances are unsquared weighted Wasserstein-2 in the feature units.",
-      "Each group pools the selected speaker roles across conversations: both humans in H-H, and separate human and AI sides in H-AI. These are cohort summaries, not individual-system rankings.",
-      "The HSC target has 34 held-out conversations per split. Its membership changes along with the reference; the other four cohort targets remain fixed. Split variation describes reference sensitivity, not a confidence interval."
-    ],
     "variants": [
       {
         "id": "anchor_distances_allosaurus_rate",
@@ -1158,15 +805,9 @@
   },
   {
     "id": "weighting",
-    "order": 9,
+    "order": 8,
     "title": "Hierarchical and equal observation weights",
     "lead": "This ablation changes how much each recorded observation contributes while keeping the conversations and feature definitions fixed.",
-    "notes": [
-      "The target pools 296 complete AI conversations from 56 callers: Gemini 73, OpenAI 76, Inworld 75 and Grok 72. Each HSC reference has 34 conversations; the fixed second anchor has 35 MSC or 120 Behaviour-SD conversations.",
-      "Hierarchical weights give conversations equal total mass and retain the speaker, turn and unit weighting within each conversation. Equal observation weights give every raw feature observation equal mass. The weighting changes in the system target, HSC reference and second anchor together.",
-      "Within each split, CDS averages the three pace features, the two rhythm features and the three interaction features within their families, then averages the three family means. The table reports the mean and sample SD of 50 resulting overall scores (SD denominator 49). Overlapping reference splits measure sensitivity to reference choice; they are not a confidence interval.",
-      "The six listener comparisons use each system’s mean score, rather than averaging agreements across splits. These pooled system scores are distinct from caller/scenario-adjusted conversation estimates. Under Behaviour-SD, both weighting rules agree on four of six comparisons but disagree on different pairs."
-    ],
     "variants": [
       {
         "id": "weighting_hsc_msc",
@@ -1280,13 +921,9 @@
   },
   {
     "id": "feature-removal",
-    "order": 10,
+    "order": 9,
     "title": "Feature and family removal ablation",
     "lead": "Each row removes one feature or one feature family and recomputes the remaining CDS average. A positive horizontal value means the full CDS has a stronger listener correlation than the reduced version.",
-    "notes": [
-      "The remaining fixed feature hierarchy is re-averaged after each removal. No weights are learned and no subset search is performed. This is a feature-removal analysis, separate from the observation-weighting experiment.",
-      "Both full and reduced scores use the same 294 listener pairs. Whiskers show the middle 95% of paired caller-resampling differences: the same resampled callers are used for the full and reduced scores. These are not confidence intervals."
-    ],
     "variants": [
       {
         "id": "feature-removal-hsc_msc",
@@ -1314,14 +951,9 @@
   },
   {
     "id": "ttsds2-correlations",
-    "order": 11,
+    "order": 10,
     "title": "TTSDS2 correlations with listener preferences",
     "lead": "This comparison asks whether the TTSDS2 advantage between two AI conversations follows the listeners’ preference for one of them. All eleven official features and the published overall score are shown.",
-    "notes": [
-      "All rows use the same 294 conversation pairs, 296 scored AI conversations and 51 callers. The one pair missing a score is excluded. Exact listener ties remain in the correlation.",
-      "The point is the mirrored-pair Spearman correlation. Bars are the 2.5th and 97.5th percentiles from 2,000 caller resamples within collection protocol; anchors and listeners are not resampled. These ranges are not labelled confidence intervals.",
-      "The HSC reference is the historical ordered 100 turns from one conversation. Individual features can follow listener preferences more strongly than the category-balanced overall score; the result does not establish metric superiority on a representative reference."
-    ],
     "variants": [
       {
         "id": "ttsds2_listener_correlations",
@@ -1354,14 +986,9 @@
   },
   {
     "id": "ttsds2-pooled-clouds",
-    "order": 12,
+    "order": 11,
     "title": "Pooled TTSDS2 with broader HSC references",
     "lead": "All partner turns from each AI system form one fixed target. We rescore each target against fifty shared draws of 100 distinct HSC turns.",
-    "notes": [
-      "References are sampled from 6,787 eligible turns in 34 HSC conversations. Draws may overlap. All four targets use the same reference within a draw; the models, target features, noise references and cluster centres stay fixed.",
-      "Each dot is a reference draw, not a conversation. The spread describes reference-selection sensitivity, not confidence intervals or a sampling distribution for listener preference. Longer conversations can contribute more turns.",
-      "Official TTSDS2 averages features within four categories and gives each category equal weight. These pooled scores and their reference clouds are distinct from caller/scenario-adjusted system scores and from historical conversation-level listener correlations."
-    ],
     "variants": [
       {
         "id": "pooled_ttsds2_hubert",
@@ -1625,15 +1252,9 @@
   },
   {
     "id": "linguistic-correlations",
-    "order": 13,
+    "order": 12,
     "title": "A separate linguistic feature family",
     "lead": "NLI entailment probability and GPT-2 mean token surprisal measure text properties. Their distributional scores are reported separately from the original eight-feature CDS.",
-    "notes": [
-      "Both anchors use the same 294 AI-conversation pairs, including 39 exact listener ties, from 51 callers. The family averages the two calibrated feature scores within each of 50 HSC splits.",
-      "Points are mirrored-pair Spearman correlations. Bars show the 2.5th and 97.5th percentiles from 2,000 caller resamples within collection protocol. These are resampling ranges, not confidence intervals.",
-      "NLI uses the planned 128-token input limit. The preceding two chronological turns form the premise; the reply is the hypothesis. GPT-2 uses the reply’s mean token surprisal in bits, equal to log₂(perplexity), with the same preceding context. Neither feature is included in the original CDS average.",
-      "A higher calibrated score means closer to HSC relative to the second anchor; it does not mean that raw entailment probability or raw surprisal is a monotonic measure of conversational quality."
-    ],
     "variants": [
       {
         "id": "linguistic_listener_correlations",
@@ -1666,14 +1287,9 @@
   },
   {
     "id": "nli-control",
-    "order": 14,
+    "order": 13,
     "title": "NLI scores for actual and shuffled replies",
     "lead": "We compare the entailment probability of each actual reply with ten shuffled replies from the same conversation, preserving speaker and role.",
-    "notes": [
-      "The two means use the same eligible replies: every retained reply has all ten shuffled controls. We average equally within speakers, within conversations and across conversations. Bars show group means, without uncertainty intervals.",
-      "Matched/scored reply counts are 4,274/4,327 for AI, 27,118/27,991 for HSC, 8,384/8,569 for MSC and 1,257/1,262 for Behaviour-SD. Each group contains all of its conversations.",
-      "The average actual-minus-shuffled difference is positive in every group, but negative in 37 of 296 AI conversations. This establishes descriptive sensitivity to reply pairing, not validity as a measure of humanness or conversational success."
-    ],
     "variants": [
       {
         "id": "nli_actual_shuffled",
@@ -1693,18 +1309,9 @@
   },
   {
     "id": "caller-duration",
-    "order": 15,
+    "order": 14,
     "title": "Callers and recording length",
     "lead": "These plots separate recovery of the full-data CDS system ordering from association with listener preferences.",
-    "notes": [
-      "The stability curves ask whether smaller caller sets preserve at least five of the six pairwise CDS decisions from all 56 callers using complete recordings. The baseline is the CDS ranking for the same estimator, not the listener ranking. Missing-system subsets count as failures. The dashed threshold is 95%.",
-      "The conversation-first estimator scores each conversation, averages within caller/scenario blocks and then across callers. The pooled estimator merges feature observations for each system before scoring them. Both use HSC-MSC and the same caller draws.",
-      "For each caller count below 56, the analysis draws 2,000 subsets without replacement within each subset. Curves and heatmaps summarize those draws. All 56 is one complete set; no subset-variation interval is estimated there.",
-      "For listener correlations, one observation is a rated pair of conversations. Repeated votes are averaged, each unique pair has equal weight, preference ties remain, and both pair orientations are included. The feature-score difference is correlated with listener preference.",
-      "The historical RQ3 pool has 295 candidate listener pairs and 297 AI conversations. Feature eligibility depends on recording length: overall CDS uses 229 pairs at 30 seconds, 283 at one minute, and 294 from two minutes through complete recordings. Each short-versus-complete comparison uses identical eligible pairs; feature-specific counts are in the download.",
-      "Correlation curves show the median and middle 95% of defined caller-subset correlations. Undefined subsets are omitted, never set to zero; their counts are retained. These ranges are not confidence intervals. Listener ratings stay fixed, so the ranges do not capture variation from sampling listeners.",
-      "Listeners rated complete conversations. Prefix results ask whether earlier speech predicts those eventual preferences. A higher short-recording point estimate does not establish that short recordings are better."
-    ],
     "variants": [
       {
         "id": "ranking_stability_conversation_first",
@@ -2169,15 +1776,9 @@
   },
   {
     "id": "pair-diagnostics",
-    "order": 16,
+    "order": 15,
     "title": "Exploratory system-pair diagnostics",
     "lead": "These checks ask how much the observed correlation changes when comparing conversations from a fixed system pairing, or after removing average rank differences between system pairings.",
-    "notes": [
-      "These are post-hoc descriptive checks on the existing 294 conversation pairs from 51 callers. No uncertainty intervals or hypothesis tests were estimated, and these data are not a new validation set.",
-      "The heatmap computes Spearman correlation separately within each of six fixed system pairs, using one canonical orientation. Its pair counts name unique conversation pairs, not mirrored observations.",
-      "The before/after plots first rank score differences and centered vote proportions across both mirrored orientations. For the second point, they subtract each oriented system-pair group’s mean rank from both variables, then correlate the residual ranks. This is a correlation of residual global ranks, not a fresh Spearman correlation after reranking.",
-      "The diagnostic does not show causal adjustment or remove all confounding. The download additionally reports centering within both collection protocol and system pair. The three CDS comparators use exactly the same 294 pairs and listener votes as TTSDS2."
-    ],
     "variants": [
       {
         "id": "ttsds2_within_system_pair_correlations",
