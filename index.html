@@ -43,7 +43,7 @@
         <h2 id="definition-title">Conversational Distribution Score</h2>
         <p>CDS compares a distribution of conversational behaviour with high-success human conversations (HSC) and a second anchor. We use either medium-success human conversations (MSC) or synthetic dialogues from Behaviour-SD as the second anchor.</p>
         <div class="formula" role="math" aria-label="CDS equals one hundred times distance to the second anchor divided by the sum of distances to HSC and the second anchor"><span>CDS = 100 ×</span><span class="fraction"><span>distance to second anchor</span><span>distance to HSC + distance to second anchor</span></span></div>
-        <p>Distances are weighted empirical Wasserstein-2 distances. A higher CDS means more HSC-like behaviour relative to the second anchor. A score of 50 means equal distances, which can both be large; if both distances are zero, we assign 50 and flag the case.</p>
+        <p>Distances are weighted empirical Wasserstein-2 distances. A higher CDS means more HSC-like behaviour relative to the second anchor. A score of 50 means equal distances, which can both be large or small</p>
       </section>
       <section id="explorer" class="explorer" aria-labelledby="results-title">
         <div class="section-heading"><p class="section-label" id="collection-kicker">Results</p><span id="collection-count" class="count"></span></div>
