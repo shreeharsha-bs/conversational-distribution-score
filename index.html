@@ -6,11 +6,11 @@
   <meta name="description" content="Conversational Distribution Score: supplementary figures and results for Distributional Metrics for Evaluating Spoken Conversational Systems.">
   <title>Conversational Distribution Score</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20260913-4">
+  <link rel="stylesheet" href="style.css?v=20260916-1">
   <script src="app.js?v=20260913-4" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#explorer">Skip to results</a>
+  <a class="skip-link" href="#listener-agreement">Skip to results</a>
   <header class="paper-header" id="top" aria-labelledby="page-title">
     <h1 id="page-title">Conversational Distribution Score</h1>
     <p class="paper-title">Distributional Metrics for Evaluating Spoken Conversational Systems</p>
@@ -30,11 +30,17 @@
       <p><sup>4</sup> Karlsruhe Institute of Technology, Germany</p>
       <p><sup>5</sup> Centre for Speech Technology Research, University of Edinburgh, UK</p>
     </div>
-    <a class="results-link" href="#explorer">Results</a>
+    <nav class="paper-actions" aria-label="Paper resources">
+      <a class="results-link" href="#listener-agreement">Results</a>
+      <!-- Add the arXiv URL as href and remove aria-disabled when ready. -->
+      <a id="arxiv-link" class="results-link" role="link" aria-disabled="true">arXiv</a>
+      <a id="dataset-link" class="results-link" href="https://huggingface.co/datasets/VoiceArena/Goal-Dataset_en_in/" target="_blank" rel="noopener">Dataset</a>
+    </nav>
   </header>
   <div class="layout">
     <aside class="sidebar" aria-label="Results navigation">
       <a class="definition-link" href="#definition">CDS definition</a>
+      <a class="definition-link" href="#listener-agreement">Listener agreement</a>
       <p class="sidebar-label">Results</p>
       <nav id="section-nav" aria-label="Plot collections"></nav>
     </aside>
@@ -44,6 +50,45 @@
         <p>CDS compares a distribution of conversational behaviour with high-success human conversations (HSC) and a second anchor. We use either medium-success human conversations (MSC) or synthetic dialogues from Behaviour-SD as the second anchor.</p>
         <div class="formula" role="math" aria-label="CDS equals one hundred times distance to the second anchor divided by the sum of distances to HSC and the second anchor"><span>CDS = 100 ×</span><span class="fraction"><span>distance to second anchor</span><span>distance to HSC + distance to second anchor</span></span></div>
         <p>Distances are weighted empirical Wasserstein-2 distances. A higher CDS means more HSC-like behaviour relative to the second anchor. A score of 50 means equal distances, which can both be large or small</p>
+      </section>
+      <section id="listener-agreement" class="comparison-section" aria-labelledby="agreement-title">
+        <h2 id="agreement-title">Agreement with listener judgments</h2>
+        <p id="agreement-description" class="comparison-caption">Spearman’s ρ relates CDS differences to listener preferences across 294 matched conversation pairs. Ranges contain the middle 95% of 2,000 resamples of whole callers with replacement within each collection protocol. “Pairs” counts agreement with listeners across six AI-system comparisons, using all eligible conversations.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="CDS and semantic baseline comparison table">
+          <table id="cds-agreement-table" class="agreement-table" aria-describedby="agreement-description">
+            <colgroup span="1"></colgroup><colgroup span="3"></colgroup><colgroup span="3"></colgroup>
+            <thead>
+              <tr><th rowspan="2" scope="col">Measurement</th><th colspan="3" scope="colgroup">HSC–MSC</th><th colspan="3" scope="colgroup">HSC–Behavior-SD</th></tr>
+              <tr><th scope="col">ρ</th><th scope="col">95% caller range</th><th scope="col">Pairs</th><th scope="col">ρ</th><th scope="col">95% caller range</th><th scope="col">Pairs</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Phone rate</th><td>0.382</td><td>[0.293, 0.469]</td><td>4/6</td><td>0.448</td><td>[0.359, 0.534]</td><td>4/6</td></tr>
+              <tr><th scope="row">Sylber rate</th><td>0.252</td><td>[0.141, 0.370]</td><td>3/6</td><td>0.321</td><td>[0.229, 0.410]</td><td>4/6</td></tr>
+              <tr><th scope="row">Sylber duration</th><td>0.503</td><td>[0.407, 0.595]</td><td>4/6</td><td>0.615</td><td>[0.537, 0.683]</td><td>5/6</td></tr>
+              <tr class="family-start"><th scope="row">nPVI</th><td>0.121</td><td>[0.000, 0.252]</td><td>1/6</td><td>0.119</td><td>[−0.002, 0.232]</td><td>3/6</td></tr>
+              <tr><th scope="row">Turn-final lengthening</th><td>−0.080</td><td>[−0.214, 0.062]</td><td>3/6</td><td>−0.076</td><td>[−0.187, 0.048]</td><td>3/6</td></tr>
+              <tr class="family-start"><th scope="row">Turn duration</th><td>−0.001</td><td>[−0.122, 0.105]</td><td>3/6</td><td>−0.089</td><td>[−0.207, 0.010]</td><td>3/6</td></tr>
+              <tr><th scope="row">Signed response gap</th><td>0.200</td><td>[0.080, 0.321]</td><td>5/6</td><td>−0.256</td><td>[−0.356, −0.162]</td><td>1/6</td></tr>
+              <tr><th scope="row">Floor-time share</th><td>−0.054</td><td>[−0.180, 0.065]</td><td>1/6</td><td>0.060</td><td>[−0.058, 0.185]</td><td>5/6</td></tr>
+              <tr class="overall-row"><th scope="row">Overall CDS</th><td>0.222</td><td>[0.090, 0.347]</td><td>5/6</td><td>0.266</td><td>[0.168, 0.364]</td><td>3/6</td></tr>
+            </tbody>
+            <tbody>
+              <tr class="family-heading"><th colspan="7" scope="rowgroup">Semantic baseline</th></tr>
+              <tr><th scope="row">NLI entailment</th><td>0.116</td><td>[0.027, 0.214]</td><td>4/6</td><td>−0.181</td><td>[−0.283, −0.071]</td><td>1/6</td></tr>
+              <tr><th scope="row">GPT-2 surprisal</th><td>−0.074</td><td>[−0.201, 0.054]</td><td>3/6</td><td>−0.186</td><td>[−0.297, −0.068]</td><td>3/6</td></tr>
+              <tr><th scope="row">Semantic (combined)</th><td>0.083</td><td>[−0.008, 0.182]</td><td>4/6</td><td>−0.240</td><td>[−0.340, −0.128]</td><td>1/6</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-scroll tts-agreement" tabindex="0" role="region" aria-label="TTSDS2 comparison table">
+          <table id="tts-agreement-table" class="agreement-table" aria-describedby="agreement-description">
+            <thead><tr><th scope="col">TTSDS2: HSC–noise</th><th scope="col">Overall</th><th scope="col">Wav2Vec2 activations</th><th scope="col">D-vector</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">ρ [95% caller range]</th><td>−0.062 [−0.153, 0.032]</td><td>0.555 [0.482, 0.625]</td><td>0.419 [0.317, 0.521]</td></tr>
+              <tr><th scope="row">Pairs</th><td>4/6</td><td>5/6</td><td>6/6</td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <section id="explorer" class="explorer" aria-labelledby="results-title">
         <div class="section-heading"><p class="section-label" id="collection-kicker">Results</p><span id="collection-count" class="count"></span></div>
