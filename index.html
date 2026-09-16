@@ -6,7 +6,7 @@
   <meta name="description" content="Conversational Distribution Score: supplementary figures and results for Distributional Metrics for Evaluating Spoken Conversational Systems.">
   <title>Conversational Distribution Score</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20260916-1">
+  <link rel="stylesheet" href="style.css?v=20260916-2">
   <script src="app.js?v=20260913-4" defer></script>
 </head>
 <body>
@@ -32,6 +32,7 @@
     </div>
     <nav class="paper-actions" aria-label="Paper resources">
       <a class="results-link" href="#listener-agreement">Results</a>
+      <a class="results-link" href="#explorer">Plots</a>
       <!-- Add the arXiv URL as href and remove aria-disabled when ready. -->
       <a id="arxiv-link" class="results-link" role="link" aria-disabled="true">arXiv</a>
       <a id="dataset-link" class="results-link" href="https://huggingface.co/datasets/VoiceArena/Goal-Dataset_en_in/" target="_blank" rel="noopener">Dataset</a>
@@ -39,18 +40,12 @@
   </header>
   <div class="layout">
     <aside class="sidebar" aria-label="Results navigation">
-      <a class="definition-link" href="#definition">CDS definition</a>
       <a class="definition-link" href="#listener-agreement">Listener agreement</a>
       <p class="sidebar-label">Results</p>
       <nav id="section-nav" aria-label="Plot collections"></nav>
+      <a class="definition-link" href="#definition">CDS definition</a>
     </aside>
     <main>
-      <section id="definition" class="definition" aria-labelledby="definition-title">
-        <h2 id="definition-title">Conversational Distribution Score</h2>
-        <p>CDS compares a distribution of conversational behaviour with high-success human conversations (HSC) and a second anchor. We use either medium-success human conversations (MSC) or synthetic dialogues from Behaviour-SD as the second anchor.</p>
-        <div class="formula" role="math" aria-label="CDS equals one hundred times distance to the second anchor divided by the sum of distances to HSC and the second anchor"><span>CDS = 100 ×</span><span class="fraction"><span>distance to second anchor</span><span>distance to HSC + distance to second anchor</span></span></div>
-        <p>Distances are weighted empirical Wasserstein-2 distances. A higher CDS means more HSC-like behaviour relative to the second anchor. A score of 50 means equal distances, which can both be large or small</p>
-      </section>
       <section id="listener-agreement" class="comparison-section" aria-labelledby="agreement-title">
         <h2 id="agreement-title">Agreement with listener judgments</h2>
         <p id="agreement-description" class="comparison-caption">Spearman’s ρ relates CDS differences to listener preferences across 294 matched conversation pairs. Ranges contain the middle 95% of 2,000 resamples of whole callers with replacement within each collection protocol. “Pairs” counts agreement with listeners across six AI-system comparisons, using all eligible conversations.</p>
@@ -106,6 +101,12 @@
           <div id="data-downloads" class="data-downloads"></div>
         </div>
         <noscript><p>This results explorer uses JavaScript to select figures. The complete figure and aggregate-data collection is available in the <a href="https://github.com/shreeharsha-bs/conversational-distribution-score">website repository</a>.</p></noscript>
+      </section>
+      <section id="definition" class="definition" aria-labelledby="definition-title">
+        <h2 id="definition-title">Conversational Distribution Score</h2>
+        <p>CDS compares a distribution of conversational behaviour with high-success human conversations (HSC) and a second anchor. We use either medium-success human conversations (MSC) or synthetic dialogues from Behaviour-SD as the second anchor.</p>
+        <div class="formula" role="math" aria-label="CDS equals one hundred times distance to the second anchor divided by the sum of distances to HSC and the second anchor"><span>CDS = 100 ×</span><span class="fraction"><span>distance to second anchor</span><span>distance to HSC + distance to second anchor</span></span></div>
+        <p>Distances are weighted empirical Wasserstein-2 distances. A higher CDS means more HSC-like behaviour relative to the second anchor. A score of 50 means equal distances, which can both be large or small</p>
       </section>
       <footer><a href="mailto:shbs@kth.se">shbs@kth.se</a><a href="https://github.com/shreeharsha-bs/conversational-distribution-score">Website source</a></footer>
     </main>

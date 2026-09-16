@@ -17,7 +17,7 @@ h1,h2,h3,p{margin:0}h1,h2,h3{color:var(--ink);line-height:1.25}h2{font-size:1.65
 .definition-link{display:block;padding:6px 10px;font-size:.9rem;text-decoration:none}.sidebar-label{padding:21px 10px 10px;color:var(--ink);font-size:.95rem;font-weight:600}
 .sidebar nav{display:grid;gap:2px}.nav-link{display:flex;gap:11px;padding:8px 10px;text-decoration:none;color:var(--body);font-size:.875rem;line-height:1.4;border-radius:4px}.nav-link .num{color:var(--muted);font-size:.75rem;padding-top:2px;min-width:17px;font-variant-numeric:tabular-nums}.nav-link:hover{background:#f0f4ef}.nav-link.active{background:var(--mint);color:var(--teal);font-weight:600}
 main{min-width:0;padding:40px clamp(24px,4vw,62px) 0}
-.definition{padding-bottom:34px}.definition h2{margin-bottom:18px}.definition p{max-width:880px;font-size:.98rem}
+.definition{margin-top:36px;border-top:1px solid var(--line);padding-top:28px;padding-bottom:0}.definition h2{margin-bottom:18px}.definition p{max-width:880px;font-size:.98rem}
 .formula{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;padding:24px 12px;margin:20px 0;background:#fff;color:var(--ink);font-size:1.05rem;border:1px solid var(--line)}.fraction{display:grid;text-align:center;font-size:.9rem;max-width:100%}.fraction>span{padding:5px 8px}.fraction>span:first-child{border-bottom:1px solid var(--ink)}
 .explorer{border-top:1px solid var(--line);padding-top:26px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px}.section-label{font-size:.9rem;color:var(--muted)}.count{font-size:.8rem;color:var(--muted)}
 .controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin:24px 0 20px}.control{min-width:0}.control label{display:block;font-size:.875rem;color:var(--body);margin-bottom:6px}.control select{width:100%;background:#fff;border:1px solid #b4c6bb;border-radius:4px;color:var(--ink);padding:10px 36px 10px 12px;min-height:46px;font-size:.95rem;text-overflow:ellipsis}
@@ -45,3 +45,6 @@ footer{display:flex;gap:20px;justify-content:space-between;border-top:1px solid 
 .tts-agreement{margin-top:20px}
 .tts-agreement .agreement-table{min-width:750px}
 @media(max-width:760px){.paper-actions{gap:10px;margin-top:16px}.comparison-section{padding-top:24px}.agreement-table th,.agreement-table td{padding:10px}.agreement-table th[scope="row"],.agreement-table th[rowspan]{position:sticky;left:0;z-index:1;border-right:1px solid var(--line)}.agreement-table th[rowspan]{background:var(--mint)}.comparison-caption{font-size:.9rem}}
+
+.comparison-section:first-child{border-top:0;padding-top:0}
+.sidebar #section-nav+.definition-link{margin-top:18px}
